@@ -1,22 +1,23 @@
 require "sax-machine"
 require "rspec"
 
-class TouristVoucher
+class UnitOfDance
   include SAXMachine
-  element :voucherID
-  element :voucherType
-  element :country
-  element :numberOfDays
-  element :transport
-  element :hotelCharacteristic
-  element :cost
+  
+  element :DanceID
+  element :DanceType
+  element :SceneType
+  element :MusicType
+  element :DanceGroup
+  element :DancersType
+  element :number
 end
 
-text = File.read("ТouristVouchers.xml")
+text = File.read("Dance.xml")
 
 class Wikihandler
   include SAXMachine
-  elements :touristVoucher, :as => :touristVouchers , :class => TouristVoucher
+  elements :UnitOfDance, :as => :Dance , :class => UnitOfDance
 end
 
 describe Wikihandler do
@@ -25,26 +26,26 @@ describe Wikihandler do
     @parser.parse text
   end
 
-  it "should parse the proper number of hotels" do
-    @parser.touristVouchers.count.should eq 3
+  it "should parse the proper number of dance" do
+    @parser.Dance.count.should eq 3
   end
 
-  it "should parse the hotel id of each entry" do
-    @parser.touristVouchers[0].id.should eq "1"
+  it "should parse the dance id of each entry" do
+    @parser.Dance[0].DanceID.should eq "ID_3"
   end
 
-  it "should parse the hotel name of each entry" do
-    @parser.touristVouchers[1].country.should eq "Ukraine"
+  it "should parse the music type of each entry" do
+    @parser.Dance[1].MusicType.should eq "live music"
   end
 end
 
 parser = Wikihandler.new
 parser.parse text
 
-count = parser.touristVouchers.count
+count = parser.Dance.count
 puts count
 
-sorted = parser.touristVouchers.sort_by {|obj| obj.cost.to_f}
+sorted = parser.Dance.sort_by {|obj| obj.number}
 for i in 0..(count - 1)
-  puts sorted[i].cost
+  puts sorted[i].number
 end

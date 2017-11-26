@@ -16,6 +16,7 @@
             <xs:element name="MusicType" type="TypeOfMusic" /> <!-- Type of music, for example: phonogram, live music -->
             <xs:element name="DanceGroup" type="DanceGroup" minOccurs="0" maxOccurs="1" />
             <xs:element name="DancersType" type="NumberOfDancers" />
+			<xs:element name="number" type="xs:integer"/>
         </xs:sequence>
         <xs:attribute name="DanceID" type="xs:ID" use="required" />
     </xs:complexType>

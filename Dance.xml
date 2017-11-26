@@ -36,6 +36,7 @@
                 </Dancer>
             </Mass>
         </DancersType>
+		<number>23</number>
     </UnitOfDance>
 
     <UnitOfDance DanceID="ID_2">
@@ -58,6 +59,7 @@
                 </Dancer>
             </Pair>
         </DancersType>
+		<number>21</number>
     </UnitOfDance>
 
     <UnitOfDance DanceID="ID_3">
@@ -74,5 +76,6 @@
                 </Dancer>
             </Solo>
         </DancersType>
+		<number>2</number>
     </UnitOfDance>
 </Dance>
