@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dance xsi:noNamespaceSchemaLocation="xmldance.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <UnitOfDance DanceID="ID_1">
+        <DanceType>folk</DanceType>
+        <SceneType>assembly hall</SceneType>
+        <MusicType>phonogram</MusicType>
+        <DanceGroup>
+            <DanceGroupName>Lalala</DanceGroupName>
+            <DanceGroupAge>12</DanceGroupAge>
+        </DanceGroup>
+        <DancersType>
+            <Mass>
+                <Dancer>
+                    <DancerName>Vasya</DancerName>
+                    <DancerGender>male</DancerGender>
+                    <DancerAge>32</DancerAge>
+                    <DancerAgeOfExperience>5</DancerAgeOfExperience>
+                </Dancer>
+                <Dancer>
+                    <DancerName>Petya</DancerName>
+                    <DancerGender>male</DancerGender>
+                    <DancerAge>16</DancerAge>
+                    <DancerAgeOfExperience>1</DancerAgeOfExperience>
+                </Dancer>
+                <Dancer>
+                    <DancerName>Serega</DancerName>
+                    <DancerGender>male</DancerGender>
+                    <DancerAge>24</DancerAge>
+                    <DancerAgeOfExperience>3</DancerAgeOfExperience>
+                </Dancer>
+                <Dancer>
+                    <DancerName>Masha</DancerName>
+                    <DancerGender>female</DancerGender>
+                    <DancerAge>28</DancerAge>
+                    <DancerAgeOfExperience>2</DancerAgeOfExperience>
+                </Dancer>
+            </Mass>
+        </DancersType>
+    </UnitOfDance>
+
+    <UnitOfDance DanceID="ID_2">
+        <DanceType>rock</DanceType>
+        <SceneType>outdoor playground</SceneType>
+        <MusicType>live music</MusicType>
+        <DancersType>
+            <Pair>
+                <Dancer>
+                    <DancerName>Lena</DancerName>
+                    <DancerGender>female</DancerGender>
+                    <DancerAge>31</DancerAge>
+                    <DancerAgeOfExperience>10</DancerAgeOfExperience>
+                </Dancer>
+                <Dancer>
+                    <DancerName>Vitya</DancerName>
+                    <DancerGender>male</DancerGender>
+                    <DancerAge>35</DancerAge>
+                    <DancerAgeOfExperience>12</DancerAgeOfExperience>
+                </Dancer>
+            </Pair>
+        </DancersType>
+    </UnitOfDance>
+
+    <UnitOfDance DanceID="ID_3">
+        <DanceType>ballroom</DanceType>
+        <SceneType>TV studio</SceneType>
+        <MusicType>live music</MusicType>
+        <DancersType>
+            <Solo>
+                <Dancer>
+                    <DancerName>SoloSenja</DancerName>
+                    <DancerGender>male</DancerGender>
+                    <DancerAge>41</DancerAge>
+                    <DancerAgeOfExperience>23</DancerAgeOfExperience>
+                </Dancer>
+            </Solo>
+        </DancersType>
+    </UnitOfDance>
+</Dance>
